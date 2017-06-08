@@ -20,6 +20,7 @@ const client = AWSMqtt.connect({
 client.on('connect', () => {
     console.log('subscribing ' + topic);
     client.subscribe(topic);
+    console.log('waiting for messages!');
 });
 
 client.on('message', (topic, message) => {

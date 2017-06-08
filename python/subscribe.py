@@ -13,8 +13,6 @@ keyPath = "../keys/sub_privkey.pem"
 
 topic = "#"
 
-
-
 def on_connect(client, userdata, flags, rc):
     print("Connection returned result: " + str(rc))
     ret = client.subscribe(topic, 1)
