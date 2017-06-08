@@ -7,9 +7,9 @@ awshost = "a1sqsm2m5a5t5j.iot.eu-central-1.amazonaws.com"
 awsport = 8883
 clientId = "xminutes-news-%s" % os.urandom(6)
 thingName = "xminutes-news"
-caPath = "keys/aws-iot-rootCA.crt"
-certPath = "keys/sub_cert.pem"
-keyPath = "keys/sub_privkey.pem"
+caPath = "../keys/aws-iot-rootCA.crt"
+certPath = "../keys/sub_cert.pem"
+keyPath = "../keys/sub_privkey.pem"
 
 topic = "#"
 
